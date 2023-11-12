@@ -13,6 +13,7 @@ def destination_migrants(dataframe, start):
     plt.pie(data, labels = data.index, autopct='%1.1f%%', startangle=90)
     plt.title(f'Destination of migrants from {start}') 
     plt.show()
+    return None
 
 
 def destination_migrants_top5(dataframe, start):
@@ -22,9 +23,10 @@ def destination_migrants_top5(dataframe, start):
     Function that displays the distribution of migrants' main destinations (5) for a given country. 
     """
     data = dataframe.loc[start].sort_values(ascending = False)[0:5]
-    data.plot(kind='area', 
+    plt.plot(data, kind='area', 
              stacked=False,
              figsize=(10, 8), 
              )
     plt.title(f'Top 5 destination of migrants from {start}') 
     plt.show()
+    return None
