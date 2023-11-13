@@ -1,6 +1,15 @@
 import matplotlib.pyplot as plt
 import seaborn as sns 
 
+def get_migrants(dataframe, start, destination): 
+    """ 
+    dataframe : dataframe considered 
+    start : origin
+    destination : where the migrant goes
+    Function that displays the distribution (pie) of migrants' main destinations (8) for a given country. 
+    """
+    return dataframe.iloc[start,destination]
+
 def destination_migrants(dataframe, start):
     """ 
     dataframe : dataframe considered 
