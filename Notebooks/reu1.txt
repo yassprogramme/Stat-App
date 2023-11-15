@@ -1,0 +1,12 @@
+Compte-rendu : 
+
+- Agréger par continent le sns.heatmap + revoir la gradation 
+- question de la diagonale nulle 
+- agréger pays pour obtenir les data sur les régions sur les 4 périodes 
+- regarder quels pays ne sont pas ds le dataset
+
+- STAT DES : 
+-- représenter le nombre de migrations totales 
+-- exploiter la temporalité : entre première et dernière période est-ce que on observe un Trend 
+--  regarder les plus grosses variations (question de la relativité aussi pour cela il faut trouver un dataset démographie)
+-- 
