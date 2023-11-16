@@ -40,10 +40,10 @@ columns = [columns[0]] + [columns[4]]
 row = []
 # On récupère les informations correspondantes
 for i, donnees in enumerate(table_tr):
-    if i>1:
-        recup = donnees.find_all('td')
-        for j, element in enumerate(recup):
-            if len(element)>1:
+    if len(donnees) > 2:
+        if i>1:
+            recup = donnees.find_all('td')
+            for j, element in enumerate(recup):
                 if j==0 or j==4:
                     row.append(element.text.strip())
 
