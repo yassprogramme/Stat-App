@@ -2,9 +2,8 @@
 
 - Agréger par continent le sns.heatmap  
 - revoir la gradation du sns.heatmap (ok)
-- question de la diagonale nulle 
 - agréger pays pour obtenir les data sur les régions sur les 4 périodes (ok)
-- regarder quels pays ne sont pas ds le dataset
+- regarder quels pays ne sont pas ds le dataset (ok)
 
 - STAT DES : 
 -- représenter le nombre de migrations totales (ok)
@@ -16,3 +15,4 @@ Liste des choses faites :
 - revoir la gradation du sns.heatmap  
 -- représenter le nombre de migrations totales
 - agréger pays pour obtenir les data sur les régions sur les 4 périodes
+- regarder quels pays ne sont pas ds le dataset
