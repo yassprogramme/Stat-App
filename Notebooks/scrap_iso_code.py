@@ -43,8 +43,9 @@ for i, donnees in enumerate(table_tr):
     if i>1:
         recup = donnees.find_all('td')
         for j, element in enumerate(recup):
-            if j==0 or j==4:
-                row.append(element.text.strip())
+            if len(element)>1:
+                if j==0 or j==4:
+                    row.append(element.text.strip())
 
 values = [[row[2 * k].replace('\u200a', '').split('[')[0].split('(')[0], row[2 * k + 1]] for k in range(int(len(row) / 2))]
 
