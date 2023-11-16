@@ -26,6 +26,9 @@ def create_regions(dataframe):
     """ 
     From a dataframe (list of countries with migration flows) gives a dataframe with regions
     """
+    dataframe.set_index('countries', inplace = True)
+    dataframe.drop('TOTAL', axis = 0, inplace = True)
+    dataframe.drop('TOTAL', axis = 1, inplace = True)
     regions = list(df_correspondance['world region'].unique())
     dataframe_region = pd.DataFrame(index = regions, columns = regions)  #create the new dataframe
     dataframe_region = dataframe_region.fillna(0)
@@ -36,10 +39,9 @@ def create_regions(dataframe):
                 region_end = country_give_region(col)
                 flow = dataframe.loc[start, col]
                 dataframe_region.loc[start_region, region_end] += flow
-    return None
+    return dataframe_region
 
-
-
-
-
-
+create_regions(pd.read_csv('DATA/dataset2_90_95.csv')).to_csv('DATA/from_countries_to_region/regions_90_95')
+create_regions(pd.read_csv('DATA/dataset2_95_00.csv')).to_csv('DATA/from_countries_to_region/regions_95_00')
+create_regions(pd.read_csv('DATA/dataset2_00_05.csv')).to_csv('DATA/from_countries_to_region/regions_00_05')
+create_regions(pd.read_csv('DATA/dataset2_05_10.csv')).to_csv('DATA/from_countries_to_region/regions_05_10')
