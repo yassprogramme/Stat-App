@@ -39,3 +39,9 @@ def destination_migrants_top5(dataframe, start):
     plt.title(f'Top 5 destination of migrants from {start}') 
     plt.show()
     return None
+
+
+def total_migration(dataframe):
+    return print("Destination of migrants \n", "\n", dataframe.sum(), "\n", "\n", 
+                 "\nThere is", dataframe.sum().sum(), "migrations in total")
+

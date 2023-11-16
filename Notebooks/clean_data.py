@@ -6,11 +6,13 @@ import os
 from functools import reduce
 
 os.chdir('/Users/augustincablant/Documents/GitHub/Stat-App')
-df1 = pd.read_excel('DATA/dataset1.xlsx', sheet_name = "flow estimates by region 2005")
-df2_90_95 = pd.read_excel('DATA/dataset2.xlsx', sheet_name= '1990-95')
-df2_95_00 = pd.read_excel('DATA/dataset2.xlsx', sheet_name= '1995-2000')
-df2_2000_05 = pd.read_excel('DATA/dataset2.xlsx', sheet_name= '2000-05')
-df2_2005_10 = pd.read_excel('DATA/dataset2.xlsx', sheet_name= '2005-10')
+df1 = pd.read_excel('DATA/data xlsx/dataset1.xlsx', sheet_name = "flow estimates by region 2005")
+df_correspondance = pd.read_excel('DATA/data xlsx/dataset1.xlsx', sheet_name = "look up")
+
+df2_90_95 = pd.read_excel('DATA/data xlsx/dataset2.xlsx', sheet_name= '1990-95')
+df2_95_00 = pd.read_excel('DATA/data xlsx/dataset2.xlsx', sheet_name= '1995-2000')
+df2_2000_05 = pd.read_excel('DATA/data xlsx/dataset2.xlsx', sheet_name= '2000-05')
+df2_2005_10 = pd.read_excel('DATA/data xlsx/dataset2.xlsx', sheet_name= '2005-10')
 
 # First dataset
 def clean1(dataframe):
@@ -20,7 +22,7 @@ def clean1(dataframe):
     dataframe.columns = columns 
     return dataframe[1:]
 dataset1 = clean1(df1)
-dataset1.to_csv('DATA/dataset1.csv')
+#dataset1.to_csv('DATA/dataset1.csv')
 
 
 # Second dataset 
@@ -110,8 +112,16 @@ df2_2000_05 = clean_col(df2_2000_05)
 df2_2005_10 = clean_col(df2_2005_10)
 df2 = df2_90_95 + df2_95_00 + df2_2000_05 + df2_2005_10
 
-df2.to_csv('DATA/dataset2.csv')
-df2_90_95.to_csv('DATA/dataset2_90_95.csv')
-df2_95_00.to_csv('DATA/dataset2_95_00.csv')
-df2_2000_05.to_csv('DATA/dataset2_00_05.csv')
-df2_2005_10.to_csv('DATA/dataset2_05_10.csv')
+#df2.to_csv('DATA/dataset2.csv')
+#df2_90_95.to_csv('DATA/dataset2_90_95.csv')
+#df2_95_00.to_csv('DATA/dataset2_95_00.csv')
+#df2_2000_05.to_csv('DATA/dataset2_00_05.csv')
+#df2_2005_10.to_csv('DATA/dataset2_05_10.csv')
+
+# third dataset 
+df_correspondance.rename({"iso 3 code" : "iso"}, axis = 1, inplace = True)
+for i in df_correspondance.index.to_list():
+    df_correspondance.loc[i, 'world region'] = df_correspondance.loc[i, 'world region'].split('(')[0]
+    if df_correspondance.loc[i, 'world region'] == 'Northern Africa ':
+        df_correspondance.loc[i, 'world region'] = 'North Africa'
+#df_correspondance.to_csv('DATA/region_countries.csv')

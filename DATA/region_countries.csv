@@ -1,0 +1,197 @@
+,iso,country,world region
+0,ABW,Aruba,Central America 
+1,AFG,Afghanistan,South Asia
+2,AGO,Angola,Sub-Saharan Africa
+3,ALB,Albania,Eastern Europe
+4,ARE,United Arab Emirates,Western Asia
+5,ARG,Argentina,South America
+6,ARM,Armenia,Western Asia
+7,AUS,Australia,Oceania
+8,AUT,Austria,Western Europe
+9,AZE,Azerbaijan,Western Asia
+10,BDI,Burundi,Sub-Saharan Africa
+11,BEL,Belgium,Western Europe
+12,BEN,Benin,Sub-Saharan Africa
+13,BFA,Burkina Faso,Sub-Saharan Africa
+14,BGD,Bangladesh,South Asia
+15,BGR,Bulgaria,Eastern Europe
+16,BHR,Bahrain,Western Asia
+17,BHS,Bahamas,Central America 
+18,BIH,Bosnia and Herzegovina,Eastern Europe
+19,BLR,Belarus,Eastern Europe
+20,BLZ,Belize,Central America 
+21,BOL,Bolivia,South America
+22,BRA,Brazil,South America
+23,BRB,Barbados,Central America 
+24,BRN,Brunei,South-East Asia
+25,BTN,Bhutan,South Asia
+26,BWA,Botswana,Sub-Saharan Africa
+27,CAF,Central African Republic,Sub-Saharan Africa
+28,CAN,Canada,North America
+29,CHE,Switzerland,Western Europe
+30,CHI,Channel Islands,Northern Europe
+31,CHL,Chile,South America
+32,CHN,China,Central Asia 
+33,CIV,Ivory Coast,Sub-Saharan Africa
+34,CMR,Cameroon,Sub-Saharan Africa
+35,COD,Democratic Republic of the Congo,Sub-Saharan Africa
+36,COG,Republic of Congo,Sub-Saharan Africa
+37,COL,Colombia,South America
+38,COM,Comoros,Sub-Saharan Africa
+39,CPV,Cape Verde,Sub-Saharan Africa
+40,CRI,Costa Rica,Central America 
+41,CUB,Cuba,Central America 
+42,CYP,Cyprus,Western Asia
+43,CZE,Czech Republic,Eastern Europe
+44,DEU,Germany,Western Europe
+45,DJI,Djibouti,Sub-Saharan Africa
+46,DNK,Denmark,Northern Europe
+47,DOM,Dominican Republic,Central America 
+48,DZA,Algeria,North Africa
+49,ECU,Ecuador,South America
+50,EGY,Egypt,North Africa
+51,ERI,Eritrea,Sub-Saharan Africa
+52,ESH,Western Sahara,North Africa
+53,ESP,Spain,Southern Europe
+54,EST,Estonia,Northern Europe
+55,ETH,Ethiopia,Sub-Saharan Africa
+56,FIN,Finland,Northern Europe
+57,FJI,Fiji,Oceania
+58,FRA,France,Western Europe
+59,FSM,Micronesia,Oceania
+60,GAB,Gabon,Sub-Saharan Africa
+61,GBR,United Kingdom,Northern Europe
+62,GEO,Georgia,Western Asia
+63,GHA,Ghana,Sub-Saharan Africa
+64,GIN,Guinea,Sub-Saharan Africa
+65,GLP,Guadeloupe,Central America 
+66,GMB,Gambia,Sub-Saharan Africa
+67,GNB,Guinea-Bissau,Sub-Saharan Africa
+68,GNQ,Equatorial Guinea,Sub-Saharan Africa
+69,GRC,Greece,Southern Europe
+70,GRD,Grenada,Central America 
+71,GTM,Guatemala,Central America 
+72,GUF,French Guiana,South America
+73,GUM,Guam,Oceania
+74,GUY,Guyana,South America
+75,HKG,Hong Kong,Central Asia 
+76,HND,Honduras,Central America 
+77,HRV,Croatia,Eastern Europe
+78,HTI,Haiti,Central America 
+79,HUN,Hungary,Eastern Europe
+80,IDN,Indonesia,South-East Asia
+81,IND,India,South Asia
+82,IRL,Ireland,Northern Europe
+83,IRN,Iran,South Asia
+84,IRQ,Iraq,Western Asia
+85,ISL,Iceland,Northern Europe
+86,ISR,Israel,Western Asia
+87,ITA,Italy,Southern Europe
+88,JAM,Jamaica,Central America 
+89,JOR,Jordan,Western Asia
+90,JPN,Japan,Central Asia 
+91,KAZ,Kazakhstan,Central Asia 
+92,KEN,Kenya,Sub-Saharan Africa
+93,KGZ,Kyrgyzstan,Central Asia 
+94,KHM,Cambodia,South-East Asia
+95,KOR,South Korea,Central Asia 
+96,KWT,Kuwait,Western Asia
+97,LAO,Laos,South-East Asia
+98,LBN,Lebanon,Western Asia
+99,LBR,Liberia,Sub-Saharan Africa
+100,LBY,Libya,North Africa
+101,LCA,Saint Lucia,Central America 
+102,LKA,Sri Lanka,South Asia
+103,LSO,Lesotho,Sub-Saharan Africa
+104,LTU,Lithuania,Northern Europe
+105,LUX,Luxembourg,Western Europe
+106,LVA,Latvia,Northern Europe
+107,MAC,Macao,Central Asia 
+108,MAR,Morocco,North Africa
+109,MDA,Moldova,Eastern Europe
+110,MDG,Madagascar,Sub-Saharan Africa
+111,MDV,Maldives,South Asia
+112,MEX,Mexico,Central America 
+113,MKD,Macedonia,Eastern Europe
+114,MLI,Mali,Sub-Saharan Africa
+115,MLT,Malta,Southern Europe
+116,MMR,Myanmar,South-East Asia
+117,MNE,Montenegro,Eastern Europe
+118,MNG,Mongolia,Central Asia 
+119,MOZ,Mozambique,Sub-Saharan Africa
+120,MRT,Mauritania,Sub-Saharan Africa
+121,MTQ,Martinique,Central America 
+122,MUS,Mauritius,Sub-Saharan Africa
+123,MWI,Malawi,Sub-Saharan Africa
+124,MYS,Malaysia,South-East Asia
+125,MYT,Mayotte,Sub-Saharan Africa
+126,NAM,Namibia,Sub-Saharan Africa
+127,NCL,New Caledonia,Oceania
+128,NER,Niger,Sub-Saharan Africa
+129,NGA,Nigeria,Sub-Saharan Africa
+130,NIC,Nicaragua,Central America 
+131,NLD,Netherlands,Western Europe
+132,NOR,Norway,Northern Europe
+133,NPL,Nepal,South Asia
+134,NZL,New Zealand,Oceania
+135,OMN,Oman,Western Asia
+136,PAK,Pakistan,South Asia
+137,PAN,Panama,Central America 
+138,PER,Peru,South America
+139,PHL,Philippines,South-East Asia
+140,PNG,Papua New Guinea,Oceania
+141,POL,Poland,Eastern Europe
+142,PRI,Puerto Rico,Central America 
+143,PRK,North Korea,Central Asia 
+144,PRT,Portugal,Southern Europe
+145,PRY,Paraguay,South America
+146,PSE,Palestina,Western Asia
+147,PYF,French Polynesia,Oceania
+148,QAT,Qatar,Western Asia
+149,REU,Reunion,Sub-Saharan Africa
+150,ROU,Romania,Eastern Europe
+151,RUS,Russia,Central Asia 
+152,RWA,Rwanda,Sub-Saharan Africa
+153,SAU,Saudi Arabia,Western Asia
+154,SDN,Sudan,Sub-Saharan Africa
+155,SEN,Senegal,Sub-Saharan Africa
+156,SGP,Singapore,South-East Asia
+157,SLB,Solomon Islands,Oceania
+158,SLE,Sierra Leone,Sub-Saharan Africa
+159,SLV,El Salvador,Central America 
+160,SOM,Somalia,Sub-Saharan Africa
+161,SRB,Serbia,Eastern Europe
+162,SSD,South Sudan,Sub-Saharan Africa
+163,STP,Sao Tome and Principe,Sub-Saharan Africa
+164,SUR,Suriname,South America
+165,SVK,Slovakia,Eastern Europe
+166,SVN,Slovenia,Eastern Europe
+167,SWE,Sweden,Northern Europe
+168,SWZ,Swaziland,Sub-Saharan Africa
+169,SYR,Syria,Western Asia
+170,TCD,Chad,Sub-Saharan Africa
+171,TGO,Togo,Sub-Saharan Africa
+172,THA,Thailand,South-East Asia
+173,TJK,Tajikistan,Central Asia 
+174,TKM,Turkmenistan,Central Asia 
+175,TLS,East Timor,South-East Asia
+176,TON,Tonga,Oceania
+177,TTO,Trinidad and Tobago,Central America 
+178,TUN,Tunisia,North Africa
+179,TUR,Turkey,Western Asia
+180,TZA,Tanzania,Sub-Saharan Africa
+181,UGA,Uganda,Sub-Saharan Africa
+182,UKR,Ukraine,Eastern Europe
+183,URY,Uruguay,South America
+184,USA,United States,North America
+185,UZB,Uzbekistan,Central Asia 
+186,VCT,Saint Vincent and the Grenadines,Central America 
+187,VEN,Venezuela,South America
+188,VIR,Virgin Islands,Central America 
+189,VNM,Vietnam,South-East Asia
+190,VUT,Vanuatu,Oceania
+191,WSM,Samoa,Oceania
+192,YEM,Yemen,Western Asia
+193,ZAF,South Africa,Sub-Saharan Africa
+194,ZMB,Zambia,Sub-Saharan Africa
+195,ZWE,Zimbabwe,Sub-Saharan Africa
