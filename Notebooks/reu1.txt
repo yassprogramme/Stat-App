@@ -16,3 +16,9 @@ Liste des choses faites :
 -- représenter le nombre de migrations totales
 - agréger pays pour obtenir les data sur les régions sur les 4 périodes
 - regarder quels pays ne sont pas ds le dataset
+
+----------------- Compte-rendu reunion 2 ----------------- 
+- demander à julyan critères pour les pays pour être dans la base 
+- nb absolu / relatif 
+- avancer sur le papier 
+- 
