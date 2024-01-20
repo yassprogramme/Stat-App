@@ -39,3 +39,7 @@ def sinkhorn(a, b, C, epsilon = 1e-3, max_iters = 10000):
         else: 
             return T 
     return False
+
+def algo1(u_0, v_0, W_0): 
+    "Algorithm 1 Random walk Metropolis within Gibbs"
+    
