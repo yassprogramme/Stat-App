@@ -1,6 +1,7 @@
 ### Sinkhorn algorithm ### 
 
 import numpy as np 
+import ot 
 
 def KL_divergence(T, K):
     # Kullback Leibler divergence
@@ -40,9 +41,11 @@ def sinkhorn(a, b, C, epsilon = 1e-3, max_iters = 10000):
             return T 
     return False
 
-def algo1(u_0, v_0, W_0, delta_u2, delta_v2, delta_W2, max_iters = 1000): 
+def algo1(T, delta_u2, delta_v2, delta_W2, sigma2, max_iters = 1000, epsilon = 1e-3): 
     "Algorithm 1 Random walk Metropolis within Gibbs"
-    
+    u_0 = np.ones(T.shape[0])
+    v_0 = np.ones(T.shape[1])
+    W_0 = np.ones(T.shape)
     #First function to check if (x,y,Z) is in U
     def is_in_U(x,y,Z):
         if 0 <= x <= 1:
@@ -53,7 +56,11 @@ def algo1(u_0, v_0, W_0, delta_u2, delta_v2, delta_W2, max_iters = 1000):
         else: return None
     #Second function to compute the probability a((u,v,W),(x,y,Z))
     def a(u,v,W,x,y,Z):
-        return None
+        transport1 = ot.sinkhorn2(u, v, W, epsilon)
+        transport2 = ot.sinkhorn2(x, y, Z, epsilon)
+        norme1 = np.trace(T - transport1)
+        norme2 = np.trace(T - transport2)
+        return min(1, np.exp((norme1 - norme2) / sigma2))
     
     ## 
     u = [u_0]
@@ -65,7 +72,7 @@ def algo1(u_0, v_0, W_0, delta_u2, delta_v2, delta_W2, max_iters = 1000):
         y = v[-1] 
         Z = W[-1] 
         if is_in_U(x,y,Z):
-            if probability: 
+            if np.random.rand(1) <= a(u,v,W,x,y,Z): 
                 u.append(x)
                 v.append(y)
                 W.append(Z)
@@ -74,7 +81,7 @@ def algo1(u_0, v_0, W_0, delta_u2, delta_v2, delta_W2, max_iters = 1000):
         y = v[-1] + np.random.normal(0, np.sqrt(delta_v2))
         Z = W[-1] 
         if is_in_U(x,y,Z):
-            if probability: 
+            if np.random.rand(1) <= a(u,v,W,x,y,Z): 
                 u.append(x)
                 v.append(y)
                 W.append(Z)
@@ -83,9 +90,14 @@ def algo1(u_0, v_0, W_0, delta_u2, delta_v2, delta_W2, max_iters = 1000):
         y = v[-1] 
         Z = W[-1] + np.random.normal(0, np.sqrt(delta_W2))
         if is_in_U(x,y,Z):
-            if probability: 
+            if np.random.rand(1) <= a(u,v,W,x,y,Z): 
                 u.append(x)
                 v.append(y)
                 W.append(Z)
+
+        u_end = u[-1]
+        v_end = v[-1]
+        W_end = W[-1]
+        return [u_end, v_end, W_end]
 
     
