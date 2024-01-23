@@ -1,0 +1,24 @@
+----------------- Compte-rendu reunion 1 -----------------
+
+- Agréger par continent le sns.heatmap  
+- revoir la gradation du sns.heatmap (ok)
+- agréger pays pour obtenir les data sur les régions sur les 4 périodes (ok)
+- regarder quels pays ne sont pas ds le dataset (ok)
+
+- STAT DES : 
+-- représenter le nombre de migrations totales (ok)
+-- exploiter la temporalité : entre première et dernière période est-ce que on observe un Trend 
+--  regarder les plus grosses variations (question de la relativité aussi pour cela il faut trouver un dataset démographie)
+
+
+Liste des choses faites : 
+- revoir la gradation du sns.heatmap  
+-- représenter le nombre de migrations totales
+- agréger pays pour obtenir les data sur les régions sur les 4 périodes
+- regarder quels pays ne sont pas ds le dataset
+
+----------------- Compte-rendu reunion 2 ----------------- 
+- demander à julyan critères pour les pays pour être dans la base 
+- nb absolu / relatif 
+- avancer sur le papier 
+- 
