@@ -64,3 +64,21 @@ def get_trend(dataframe):
                  top_rows[3], "to", top_columns[3], f"representing {values[3] * 100}% of total migrations \n",
                  top_rows[4], "to", top_columns[4], f"representing {values[4] * 100}% of total migrations \n")
 
+def obtenir_tendance(dataframe):
+    """ 
+    dataframe : dataframe considered 
+    Function which gets the trend of migration flows for a given period. 
+    """
+    dataframe = dataframe / dataframe.sum().sum()  #we first regularized our dataset 
+    stacked_series = dataframe.stack()
+    top_values = stacked_series.nlargest(5)
+    values = top_values.values
+    top_indices = top_values.index
+    top_rows = [index[0] for index in top_indices]
+    top_columns = [index[1] for index in top_indices]
+    return print("Les 5 principaux mouvements de population (sur des données régularisées) concernent les migrants partant de :\n",
+                 top_rows[0], "to", top_columns[0], f"Représentant {values[0] * 100}% du total des migrations  \n",
+                 top_rows[1], "to", top_columns[1], f"Représentant {values[1] * 100}% du total des migrations  \n",
+                 top_rows[2], "to", top_columns[2], f"Représentant {values[2] * 100}% du total des migrations  \n",
+                 top_rows[3], "to", top_columns[3], f"Représentant {values[3] * 100}% du total des migrations  \n",
+                 top_rows[4], "to", top_columns[4], f"Représentant {values[4] * 100}% du total des migrations  \n")
