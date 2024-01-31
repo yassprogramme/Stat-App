@@ -1,0 +1,8 @@
+Computational Optimal Transport Marco Cuturi & Gabriel Peyré
+Cours MCMC Arnaud Guyader (cf Drive)
+Du Transport Optimal et de son application en apprentissage statistique ENS, Julien Malka et Camille Mondon
+Vidéo de l'article Marie-Thérèse Wolfram sur Youtube
+Introduction au transport optimal Gabriel Peyré sur Youtube
+Lightspeed Computation of Optimal Transport Marco Cuturi
+
+
