@@ -1,4 +1,4 @@
-### Sinkhorn algorithm ### 
+###  MH with Gibbs  ### 
 
 import numpy as np 
 import ot 
