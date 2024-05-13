@@ -4,7 +4,7 @@
 
 ## Problematic : Measuring and modeling migratory flows is notoriously difficult, notably due to different standards between countries, for example regarding the notion of residency. This topic focuses on the study of international migratory flows represented by bilateral flows estimated at the country level over four periods of five years, between 1990 and 2010. The flows are available for 196 countries.
 
-Reported migration flow data captures (noisily) the number of individuals moving from one country to another in a given period of time. It can be interpreted as a noisy observation of an optimal transportation map, with costs related to the geographical position of countries. To estimate migration costs, we adopt a theoretical approach based on optimal transport and inspired by the paper by Andrew M. Stuart and Marie-Therese Wolfram in [\textit{Inverse Optimal Transport}.]{https://arxiv.org/pdf/1905.03950.pdf}
+Reported migration flow data captures (noisily) the number of individuals moving from one country to another in a given period of time. It can be interpreted as a noisy observation of an optimal transportation map, with costs related to the geographical position of countries. To estimate migration costs, we adopt a theoretical approach based on optimal transport and inspired by the paper by Andrew M. Stuart and Marie-Therese Wolfram in Inverse Optimal Transport. (https://arxiv.org/pdf/1905.03950.pdf)
 
 
 ## Description
